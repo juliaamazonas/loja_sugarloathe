@@ -42,6 +42,10 @@ nav li a {
     letter-spacing: 1px;
 }
 
+nav li a:hover {
+    border-bottom: none;
+}
+
 
 .quem-somos {
     display: flex;
@@ -130,14 +134,24 @@ nav li a {
 }
 
 .produtos article button:hover {
-    /*background-color: #c99002;*/
-    font-weight: 500;
+    background-color: #c99002;
+    border: 1px solid #161228;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1024px) {
 
+    body {
+        margin-right: 100px;
+    }
+
     .quem-somos {
         display: block;
+    }
+
+    .quem-somos div {
+        display: block;
+        padding: 10px;
     }
 
     .quem-somos img {
@@ -152,10 +166,17 @@ nav li a {
 
     nav ul {
         position: absolute;
+        margin-right: 120px;
     }
 
-    nav li a :hover {
+    nav li a:hover {
         text-decoration: underline;
+        color: #fff;
+    }
+
+    article {
+        width: auto;
+        max-height: 400px;
     }
 
     .produtos {
@@ -167,5 +188,51 @@ nav li a {
 
 }
 
+@media screen and (max-width: 640px) {
+    
+    header h1 {
+        font-size: 20px;
+        max-width: 80px;
+        font-size: 14px;
+    }
+    
+    nav ul {
+        display: block;
+        position: absolute;
+        top:10px;
+    }
 
+    nav ul li a {
+        font-size: 12px;
+    }
 
+    nav li a:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    .quem-somos {
+        display: block;
+    }
+
+    .quem-somos div {
+        display: block;
+        padding: 10px;
+    }
+
+    .quem-somos img {
+        max-width: 500px;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .produtos {
+        display: block;
+        padding: 10px;
+}
+
+.produtos article img {
+    margin-top: 8px;
+}
+
+}
