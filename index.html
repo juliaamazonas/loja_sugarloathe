@@ -3,130 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sugar Loathe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css"/>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>EBAC News</h1>
-            <form>
-                <input type="search" placeholder="Busque no site">
-                <button type="submit">Pesquisar</button>
-            </form>
-        </div>
-        <div class="botao-menu">
-            <button type="button">Menu</button>
-        </div>
-        <nav class= "container">
-            <ul class= "menu">
+        <h1>Sugar Loathe Roller Derby</h1>
+        <nav>
+            <ul>
                 <li>
-                    Esportes
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">Futebol</a>
-                        </li>
-                        <li>
-                            <a href="#">Basquete</a>
-                        </li>
-                        <li>
-                            <a href="#">Formula 1</a>
-                        </li>
-                    </ul>
+                    <a href="#quem-somos">Quem Somos</a>
                 </li>
                 <li>
-                    Economia
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">Bolsa de valores</a>
-                        </li>
-                        <li>
-                            <a href="#">Imposto de renda</a>
-                        </li>
-                        <li>
-                            <a href="#">Finanças Pessoais</a>
-                        </li>
-                    </ul>
+                    <a href="#produtos">Produtos</a>
                 </li>
             </ul>
-            <div class="clear"></div>
         </nav>
     </header>
-    <div class="container conteudo">
-        <main>
-            <section class="destaque">
-                <h2>Em destaque</h2>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320" />
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
-                    </a>
-                </article>
-            </section>
-            <section>
-                <h2>Ultimas Noticias</h2>
-            <div class="noticias">
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320" />
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
-                    </a>
-                </article>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320" />
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
-                    </a>
-                </article>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320" />
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
-                    </a>
-                </article>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320" />
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
-                    </a>
-                </article>
-            </div>
-            </section>
-        </main>
-        <aside>
-            <section class="novidades">
-                <h2>Novidades</h2>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320" />
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
-                    </a>
-                </article>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320" />
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
-                    </a>
-                </article>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320" />
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
-                    </a>
-                </article>
-            </section>
-        </aside>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-            $('.botao-menu button').click(function() {
-                $('.menu').slideToggle();
-            })
-        })
-    </script>
+    <section id="quem-somos" class="quem-somos">
+        <img src="https://i.pinimg.com/564x/a0/e4/e1/a0e4e12de7890425430a7ee81676c0e4.jpg" alt="Imagem da loja com diversos patins"/>
+        <div>
+            <h1>Quem Somos</h1>
+            <p>
+                A Sugar Loathe Roller Derby nasceu em maio
+                de 2010 e foi a segunda liga fundada no Brasil.
+                Parte importante do roller derby nacional,
+                sediou o primeiro campeonato brasileiro e
+                muitos outros eventos importantes no cenário
+                esportivo.
+            </p>
+            <p>
+                Aqui você encontra produtos oficiais da Sugar Loathe e outros produtos utilizados no Roller Derby. 
+            </p>
+        </div>
+    </section>
+    <section id="produtos" class="secao-um">
+        <h1>Produtos</h1>
+        <div class="produtos">
+            <article>
+                <img src="./IMG_4807e.JPG" alt="Camiseta com desenho de patins">
+                <h2>Camiseta Preta Patins</h2>
+                <p>Tamanhos disponíveis: P-XXG.</p>
+                <h3>R$: 35,00 .</h3>
+                <button type="button">Adicionar ao carrinho</button>
+            </article>
+            <article>
+                <img src="./IMG_4802.JPG" alt="Samba-Canção">
+                <h2>Samba-Canção</h2>
+                <p>Tamanhos disponíveis: P-XXG.</p>
+                <h3>R$: 55,00 .</h3>
+                <button type="button">Adicionar ao carrinho</button>
+            </article>
+            <article>
+                <img src="./IMG_4815e.JPG" alt="Camiseta com logo do time">
+                <h2>Camiseta Escudo Sugar Loathe</h2>
+                <p>Tamanhos disponíveis: P-XXG.</p>
+                <h3>R$: 35,00 .</h3>
+                <button type="button">Adicionar ao carrinho</button>
+            </article>
+            <article>
+                <img src="./IMG_4823.JPG" alt="Short-Doll">
+                <h2>Short-Doll</h2>
+                <p>Tamanhos disponíveis: P-XXG.</p>
+                <h3>R$: 55,00 .</h3>
+                <button type="button">Adicionar ao carrinho</button>
+            </article>
+        </div>
+    </section>
 </body>
 </html>
